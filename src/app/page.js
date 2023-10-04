@@ -1,10 +1,10 @@
 // import styles from "./page.module.css";
-import MyThree from "@/components/Three";
+import VirtualWardobe from "@/components/VirtualWardrobe";
 
 export default function Home() {
   return (
     <main>
-      <MyThree />
+      <VirtualWardobe />
     </main>
   );
 }
