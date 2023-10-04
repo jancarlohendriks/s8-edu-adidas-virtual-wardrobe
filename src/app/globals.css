@@ -1,4 +1,31 @@
-:root {
+body {
+  margin: 0;
+}
+
+#gui {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 70vh; /* Set the container's height to the full viewport height */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+canvas {
+  display: block; /* Make sure the canvas is a block element */
+  min-width: 100%; /* Make sure the canvas doesn't exceed the container's height */
+  object-fit: cover;
+}
+
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -104,4 +131,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */
